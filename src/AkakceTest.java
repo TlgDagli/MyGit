@@ -37,10 +37,33 @@ public class AkakceTest extends BaseDriver {
         ilSelect.selectByIndex(1);
 
         WebElement ilce= driver.findElement(By.xpath("//select[@id='locds']"));
-        Select ilceSelect=new Select(il);
+        Select ilceSelect=new Select(ilce);
         ilceSelect.selectByIndex(4);
 
-BekleKapat();
+        WebElement gun= driver.findElement(By.xpath("//select[@id='bd']"));
+        Select gunSelect=new Select(gun);
+        gunSelect.selectByIndex(25);
+
+        WebElement ay= driver.findElement(By.xpath("//select[@id='bm']"));
+        Select aySelect=new Select(ay);
+        aySelect.selectByIndex(12);
+
+        WebElement yil= driver.findElement(By.xpath("//select[@id='by']"));
+        Select yilSelect=new Select(yil);
+        yilSelect.selectByVisibleText("1982");
+
+        WebElement ksggp=driver.findElement(By.xpath("//input[@id='rnufpca']"));
+        ksggp.click();
+
+        WebElement kampanya=driver.findElement(By.xpath("//input[@id='rnufnee']"));
+        kampanya.click();
+        WebElement olustur=driver.findElement(By.xpath("//input[@id='rfb']"));
+        olustur.click();
+
+
+
+
+        BekleKapat();
 
 
 
