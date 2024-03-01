@@ -36,6 +36,10 @@ public class AkakceTest extends BaseDriver {
         Select ilSelect=new Select(il);
         ilSelect.selectByIndex(1);
 
+        WebElement ilce= driver.findElement(By.xpath("//select[@id='locds']"));
+        Select ilceSelect=new Select(il);
+        ilceSelect.selectByIndex(4);
+
 BekleKapat();
 
 
