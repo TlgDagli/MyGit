@@ -6,7 +6,6 @@ public class Hakan extends BaseDriver {
     @Test
     public void test1(){
 
-        driver.get("blabala");
-
+        driver.get("blabla");
     }
 }
